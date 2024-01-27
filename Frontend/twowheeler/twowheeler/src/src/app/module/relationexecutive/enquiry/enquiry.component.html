@@ -1,0 +1,57 @@
+<div class="form-wrapper">
+    <div class="container form-page-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <h1 class="pb-5 text-center">Customer Enquiry Form</h1>
+          <form  [formGroup]= "enquiryForm" (ngSubmit)= "enquirySubmit(enquiryForm.value)">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="fname" formControlName="companyname" placeholder="Company Name" name="companyname" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="companypan" formControlName="companypan" placeholder="Company Pan ID" name="companypan" required>
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="companyemailid" formControlName="companyemailid" placeholder="email id" name="companyemailid" required>
+                </div>
+              </div>
+             
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="companycontactno" formControlName="companycontactnumber" placeholder="Contact No" name="companycontactnumber" required>
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="cityname" formControlName="cityname" placeholder="City Name" name="cityname" required>
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="loanamountrequired" formControlName="loanamountrequired" placeholder="Loan Amount Requird" name="loanamountrequired" required>
+                </div>
+              </div>
+             
+              <div class="col-lg-12 mb-3">
+                <button type="submit"  class="btn btn-success btn-block btn-lg text-uppercase">SUBMIT</button>
+              </div>
+               <div class="col-lg-12 mb-3">
+                <div class="form-group w-md-25 float-md-center">
+                  <button type="reset" class="btn btn-danger btn-block btn-lg text-uppercase">RESET</button>
+  
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

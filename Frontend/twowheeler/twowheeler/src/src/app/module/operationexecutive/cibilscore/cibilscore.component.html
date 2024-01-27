@@ -1,0 +1,19 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Cibil Pan id</th>
+      <th scope="col">Cibil Score</th>
+      <th scope="col">Cibil Status</th>
+      <th scope="col">Cibil Remark</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let i of ci">
+      <td>{{i.cibilpanid}}</td>
+      <td>{{i.cibilscore}}</td>
+      <td>{{i.cibilstatus}}</td>
+      <td>{{i.cibilremark}}</td>
+    </tr>
+  </tbody>
+</table>

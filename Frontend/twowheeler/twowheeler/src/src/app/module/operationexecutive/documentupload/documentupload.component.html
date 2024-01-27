@@ -1,0 +1,166 @@
+<p>uploaddocument works!</p>
+
+
+
+<div>
+  <form [formGroup]="companyEnqId" (ngSubmit)="save()">
+
+    Document_Id <input type="text" formControlName="documentId"><br><br><br>
+
+
+    panCard <input type="file" (change)="onselectedFile1($event)"><br><br>
+     <!-- <img [src]="imageSrc1" height="150">    <br><br>  -->
+    rentAggrement <input type="file" (change)="onselectedFile2($event)"><br><br>
+    companyPhotos <input type="file" (change)="onselectedFile3($event)"><br><br>
+    bankStatement <input type="file" (change)="onselectedFile4($event)"><br><br>
+    cancelCheckPhoto <input type="file" (change)="onselectedFile5($event)"><br><br>
+    incomeTaxReturns <input type="file" (change)="onselectedFile6($event)"><br><br>
+    signaturePhoto <input type="file" (change)="onselectedFile7($event)"><br><br>
+    quotationPhoto <input type="file" (change)="onselectedFile8($event)"><br><br>
+
+
+    <input type="submit" value="submit">
+
+
+  </form>
+
+
+</div>
+<div>
+  <button (click)="image()">getDocuments</button>
+</div>
+
+<!--      
+    <table >
+      <thead>
+        <tr>
+          <th>Document_Id</th>
+          <th>panCard</th>
+          <th>rentAggrement</th>
+          <th>companyPhotos</th>
+          <th>addressProof</th>
+          <th>addressProof</th>
+          <th>addressProof</th>
+        </tr>
+      </thead>
+      <tbody *ngIf=retrievedDoc>
+        <tr *ngFor="let d of retrievedDoc">
+          <td>{{d.customer_id}}</td>
+          <td><img [src]="'data:image/jpeg;base64,'+d.address_proof" height="150"></td>
+          <td><img [src]="'data:image/jpeg;base64,'+d.photo" height="150"></td>
+          <td> <img [src]="'data:image/jpeg;base64,'+d.signature" height="150"></td>
+          <td> <img [src]="'data:image/jpeg;base64,'+d.thumb" height="150"></td>
+         
+          <td> 
+    <a class="btn">
+            <i class="fa fa-trash " (click)="deleteFile(d.Customer_Id)"></i>
+        </a>
+
+        <a class="btn">
+            <i class="fa fa-edit " routerLink= "update" [state]="d"></i>
+        </a>
+    
+    
+    
+    </td>
+        </tr>
+        </tbody>
+
+        
+    </table>
+
+<form action="">
+  <input id="uploadFile" placeholder="Pancard" disabled="disabled" />
+  <div class="fileUpload btn btn-primary">
+    <span>Upload</span>
+    <input id="uploadBtn" type="file" class="upload" />
+  </div>
+</form>
+
+<div class="form-wrapper">
+  <div class="container form-page-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <h1 class="pb-5 text-center">DOCUMENT UPLOAD PROCESS</h1>
+        <form>
+          <div class="column">
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="documentId" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>Upload</span>
+                <input type="text" formControlName="documentId">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="Pancard" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>Upload</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="rentAggrement" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>rentAggrement</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="companyPhotos" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>companyPhotos</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="bankStatement" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>bankStatement</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="cancelCheckPhoto" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>cancelCheckPhoto</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="incomeTaxReturns" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>incomeTaxReturns</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="signaturePhoto" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>signaturePhoto</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="uploadFile" placeholder="quotationPhoto" disabled="disabled" />
+              <div class="fileUpload btn btn-primary">
+                <span>quotationPhoto</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-3">
+              <button type="submit" class="btn btn-success btn-block btn-lg text-uppercase">SUBMIT</button>
+            </div>
+            <div class="col-lg-6 mb-3">
+              <div class="form-group w-md-25 float-md-center">
+                <button type="reset" class="btn btn-danger btn-block btn-lg text-uppercase">RESET</button>
+
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+-->

@@ -1,0 +1,63 @@
+<p>viewcusstomer works!</p>
+ {{item.enqId}}
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Enquiry ID</th>
+        <th scope="col">Company Name</th>
+        <th scope="col">Pancard</th>
+        <th scope="col">Email</th>
+        <th scope="col">Contact</th>
+        <th scope="col">City Name</th>
+        <th scope="col">Loan Amount Required</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+        <td>{{item.enqId}}</td>
+        <td>{{item.companyname}}</td>
+        <td>{{item.companypan}}</td>
+        <td>{{item.companyemailid}}</td>
+        <td>{{item.companycontactnumber}}</td>
+        <td>{{item.cityname}}</td>
+        <td>{{item.loanamountrequired}}</td>
+        </tr>
+      
+       
+    
+    </tbody>
+  </table>
+ 
+
+ <!-- <p>Hiii </p>
+ 
+ <div class="jumbotron"style="text-align:center" >
+  <table class="table table-dark center " style="text-align:center" >
+      <tr>
+          <td> Name</td>
+          <td> <input type="text" value={{item.companyname}}></td>
+      </tr>
+      <tr>
+          <td> Book Price</td>
+          <td> <input type="text" value={{item.companypan}}></td>
+      </tr>
+      <tr>
+          <td> Book Author</td>
+          <td> <input type="text" value={{item.companyemailid}}></td>
+      </tr>
+      <tr>
+          <td> Book page</td>
+          <td> <input type="text" value={{item.companycontactnumber}}></td>
+      </tr>
+      <tr>
+          <td> Username</td>
+          <td> <input type="text" value={{item.cityname}}></td>
+      </tr>
+      <tr>
+          <td> password</td>
+          <td> <input type="text" value={{item.loanamountrequired}}></td>
+      </tr>
+  </table>
+  <button class="btn btn-info float-right" (click)="getback()">Go Back</button>
+</div> -->
